@@ -43,6 +43,27 @@ let int_list = [1;2;3];;
 9 :: int_list;;
 ```
 
+### references
+
+To create reference use `ref` keyword.
+```{OCaml}
+# let r = ref 0;;
+val r : int ref = {contents = 0}
+```
+Accessing the reference needs to be done with `!` dereference operator.
+```{OCaml}
+# !r;;
+- : int = 0
+```
+To update the reference content use `:=`
+
+```{OCaml}
+# r:= 10;;
+- : int = 10
+```
+
+
+One can chain couple of expressions with a single `;` between them.
 
 ### functions
 
@@ -121,4 +142,54 @@ To access tuple element use pattern matching.
 let second_elem t = match t with
   | (_, y, _) -> y;;
 ```
+
+## types
+
+### Variant types
+
+One can use enum like types.
+```{OCaml}
+# type page_range =
+    | All
+    | Current
+    | Range of int * int;;
+type page_range = All | Current | Range of int * int
+
+```
+
+### Record types
+
+The record types are a bit like hash maps, one can access value by dot.
+
+```{OCaml}
+# type person = {
+    first_name : string;
+    surname : string;
+    age : int
+  };;
+type person = { first_name : string; surname : string; age : int; }
+```
+
+## Exception
+
+To raise an exception one should use `raise`. They are caught by `try with` expression.
+
+```{OCaml}
+# let id_42 n = if n <> 42 then raise (Failure "Sorry") else n;;
+val id_42 : int -> int = <fun>
+
+# id_42 42;;
+- : int = 42
+
+# id_42 0;;
+Exception: Failure "Sorry".
+
+# try id_42 0 with Failure _ -> 0;;
+- : int = 0
+```
+
+## Modules
+
+
+
 
