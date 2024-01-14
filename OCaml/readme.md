@@ -190,6 +190,12 @@ Exception: Failure "Sorry".
 
 ## Modules
 
+One can see what is in the module with `#show {Module}`
 
+To call module function one need to access it by it's module name:
 
+```{OCaml}
+Option.map (fun x -> x * x) None;;
+Option.map (fun x -> x * x) (Some 8);;
+```
 
