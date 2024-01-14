@@ -91,3 +91,19 @@ let rec range lo hi =
 
 With recursive function they have to start with `let rec _ = _`
 
+
+
+## Pattern matching
+
+We can match anything except functions.
+
+```{OCaml}
+let g' x = match x with
+    | "foo" -> 1
+    | "bar" -> 2
+    | "baz" -> 3
+    | "qux" -> 4
+    | _ -> 0;;
+val g' : string -> int = <fun>
+```
+
