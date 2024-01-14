@@ -19,6 +19,13 @@ let y = 50 in y * y;;
 The code above returns `2500` without assigning the result to the variable `y`.
 Variable `y` is only present in the scope followed by `in` expression.
 
+If one want to assign the result of `in` expression, then they can do following:
+
+```{OCaml}
+let s = let y = 50 in let z = 10 in y * z;;
+```
+
+Variable `s` is initialized with value of `500`. `y` and `z` are only bound to the expression scope.
 ### Lists
 
 lists are created with following syntax:
@@ -29,4 +36,35 @@ let int_list = [1;2;3];;
 ```
 
 Important note is that list elements are split by `semicolon`, not comma.
+
+
+### functions
+
+Functions are defined as follow:
+
+```{OCaml}
+let square x = x * x;;
+square 10 ;;
+square(20);;
+```
+
+Anonymous functions
+
+```{OCaml}
+fun x -> x * x;;
+let s = (fun x -> x * x) 50;;
+```
+
+
+Partial execution of a function
+
+
+```{OCaml}
+let cat x y -> x ^ " " ^ y;;
+let partial = cat "Hello";;
+let hello_world = partial "World";;
+```
+If one do not pass all arguments to the function. It becomes partial, and expects other arguments to 
+fill the blank ones before it is executed.
+
 
