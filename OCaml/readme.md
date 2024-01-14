@@ -107,3 +107,18 @@ let g' x = match x with
 val g' : string -> int = <fun>
 ```
 
+
+## Tuples
+
+Tuples can have mixed types.
+
+```{OCaml}
+let tpl = (1,2,"aaa");;
+```
+To access tuple element use pattern matching.
+
+```{OCaml}
+let second_elem t = match t with
+  | (_, y, _) -> y;;
+```
+
