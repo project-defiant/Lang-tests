@@ -37,6 +37,12 @@ let int_list = [1;2;3];;
 
 Important note is that list elements are split by `semicolon`, not comma.
 
+To prepend to the list use `cons` operator. It is not symmetric, so appending does not work.
+```{OCaml}
+let int_list = [1;2;3];;
+9 :: int_list;;
+```
+
 
 ### functions
 
@@ -67,4 +73,21 @@ let hello_world = partial "World";;
 If one do not pass all arguments to the function. It becomes partial, and expects other arguments to 
 fill the blank ones before it is executed.
 
+Side effects are performed by set of functions like:
+- [x] read_line
+- [x] print_endline
+the first one takes IO (unit type), the latter returns to IO (unit type)
+
+
+Recursive functions should be used instead of `for` and `while` loops.
+
+```{OCaml}
+let rec range lo hi = 
+  if lo > hi then
+    []
+  else 
+    lo :: range (lo + 1) hi;;
+```
+
+With recursive function they have to start with `let rec _ = _`
 
