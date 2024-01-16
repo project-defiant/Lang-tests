@@ -13,6 +13,7 @@ val value : string = "something"
 utop # let value2 x  = x * x;;
 val value2 : int -> int = <fun>
 ```
+## Local and top level expressions
 
 One can have global (top level) or local (using `in` keyword) named expressions. Local definitions can be
 - [x] chained
@@ -42,3 +43,28 @@ Error: Unbound value d
 # e;;
 Error: Unbound value e
 ```
+
+## Pattern matching and destructuring
+
+One can create a descructuring assingnment with `tuples` and `records`.
+
+## functions
+
+In OCaml one do not call functions with parenthesis, rather by it's name and pass all positional arguments afterwards.
+The parenthesis are used to limit the expressions to subexpressions only.
+
+Reverse pipe operator in OCaml is called `application operator` and it's value is `@@`.
+
+Original pipe operator is `|>`.
+```{OCaml}
+# int_of_float (sqrt (float_of_int (int_of_string "81")));;
+- : int = 9
+
+# int_of_float @@ sqrt @@ float_of_int @@ int_of_string "81";;
+- : int = 9
+# "81" |> int_of_string |> float_of_int |> sqrt |> int_of_float;;
+- : int = 9
+```
+
+
+
