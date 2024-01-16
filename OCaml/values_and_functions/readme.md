@@ -62,9 +62,28 @@ Original pipe operator is `|>`.
 
 # int_of_float @@ sqrt @@ float_of_int @@ int_of_string "81";;
 - : int = 9
+
 # "81" |> int_of_string |> float_of_int |> sqrt |> int_of_float;;
 - : int = 9
 ```
+All recursive functions must be bound to a name.
+
+If we use `fun` keyword, we must use the `->` symbol. 
+We can use closures.
+
+
+The functions always have a single parameter (if multiple parameters are applied, then we use partials).
+We can also use tuple parameters in single parameter functions. 
+
+1. Function that uses multiple arguments is known as curried `string -> (string -> string)`
+2. Function that uses tuple as argument is known as uncurried `string * string -> string`
+
+Conversion `1 -> 2 ` is called `uncurrying`, the other way around is `currying`.
+
+Another important concepts are `domain` and `codomain`.
+`domain (inputs) -> codomain (results)`. If the function operates outside their domain or codomain.
+this means that is performs some `side effects`. `Pure` functions do not have side effects. `Impure` functions
+do.
 
 
 
