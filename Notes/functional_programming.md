@@ -9,6 +9,7 @@ The textbook is "OCaml Programming: Correct + Efficient + Beautiful": https://cs
 * avoids mutable state
 
 Expressions specify what to compute
+
 - Variables never change value
 - Functions never have side effects
 
@@ -25,6 +26,7 @@ p.next = p.next.next
 ```
 
 * Side effects
+  
 ```c
 int x= 0
 int incr_x() {
@@ -32,5 +34,3 @@ int incr_x() {
   return x;
 }
 ```
-
-
