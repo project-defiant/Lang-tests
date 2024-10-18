@@ -13,3 +13,5 @@ Future languages:
 - [x] Scala
 - [x] C++
 - [x] Haskell  
+
+If you spot any mistakes in my notes, please leave a comment!

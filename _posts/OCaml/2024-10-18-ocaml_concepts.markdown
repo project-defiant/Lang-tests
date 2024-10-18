@@ -1,5 +1,7 @@
-# OCaml language
-
+---
+layout: post
+title:  "OCaml main concepts"
+---
 
 ## main concepts
 
@@ -13,9 +15,11 @@ let x = 50;;
 
 Variables are immutable (they are constant). To use mutable variables one need to use `references`.
 Variables can be limited to some expression scope only
+
 ```{OCaml}
 let y = 50 in y * y;;
 ```
+
 The code above returns `2500` without assigning the result to the variable `y`.
 Variable `y` is only present in the scope followed by `in` expression.
 
@@ -26,6 +30,7 @@ let s = let y = 50 in let z = 10 in y * z;;
 ```
 
 Variable `s` is initialized with value of `500`. `y` and `z` are only bound to the expression scope.
+
 ### Lists
 
 lists are created with following syntax:
@@ -38,6 +43,7 @@ let int_list = [1;2;3];;
 Important note is that list elements are split by `semicolon`, not comma.
 
 To prepend to the list use `cons` operator. It is not symmetric, so appending does not work.
+
 ```{OCaml}
 let int_list = [1;2;3];;
 9 :: int_list;;
@@ -46,22 +52,25 @@ let int_list = [1;2;3];;
 ### references
 
 To create reference use `ref` keyword.
+
 ```{OCaml}
 # let r = ref 0;;
 val r : int ref = {contents = 0}
 ```
+
 Accessing the reference needs to be done with `!` dereference operator.
+
 ```{OCaml}
 # !r;;
 - : int = 0
 ```
+
 To update the reference content use `:=`
 
 ```{OCaml}
 # r:= 10;;
 - : int = 10
 ```
-
 
 One can chain couple of expressions with a single `;` between them.
 
@@ -82,23 +91,23 @@ fun x -> x * x;;
 let s = (fun x -> x * x) 50;;
 ```
 
-
 Partial execution of a function
-
 
 ```{OCaml}
 let cat x y -> x ^ " " ^ y;;
 let partial = cat "Hello";;
 let hello_world = partial "World";;
 ```
+
 If one do not pass all arguments to the function. It becomes partial, and expects other arguments to 
 fill the blank ones before it is executed.
 
 Side effects are performed by set of functions like:
+
 - [x] read_line
 - [x] print_endline
-the first one takes IO (unit type), the latter returns to IO (unit type)
 
+the first one takes IO (unit type), the latter returns to IO (unit type)
 
 Recursive functions should be used instead of `for` and `while` loops.
 
@@ -111,8 +120,6 @@ let rec range lo hi =
 ```
 
 With recursive function they have to start with `let rec _ = _`
-
-
 
 ## Pattern matching
 
@@ -128,7 +135,6 @@ let g' x = match x with
 val g' : string -> int = <fun>
 ```
 
-
 ## Tuples
 
 Tuples can have mixed types.
@@ -136,6 +142,7 @@ Tuples can have mixed types.
 ```{OCaml}
 let tpl = (1,2,"aaa");;
 ```
+
 To access tuple element use pattern matching.
 
 ```{OCaml}
@@ -148,6 +155,7 @@ let second_elem t = match t with
 ### Variant types
 
 One can use enum like types.
+
 ```{OCaml}
 # type page_range =
     | All
@@ -198,4 +206,3 @@ To call module function one need to access it by it's module name:
 Option.map (fun x -> x * x) None;;
 Option.map (fun x -> x * x) (Some 8);;
 ```
-

@@ -1,4 +1,8 @@
-# Data Types in OCaml
+---
+layout: post
+title:  "Data Types in OCaml"
+---
+
 
 OCaml is statically and strongly typed language. Types can not change
 at runtime, only when explicitly converted.
@@ -33,13 +37,12 @@ Enumerated types, defined by explicit list of values. Defined values are called 
 # type rectitude = Evil | R_Neutral | Good;;
 type rectitude = Evil | R_Neutral | Good
 ```
-The variants can be recursive.
 
+The variants can be recursive.
 
 ### Polymorphic types
 
 #TODO: Add the docs here ... when you understand it !
-
 
 ### Records
 
@@ -56,8 +59,6 @@ Like dictionaries with key-value pairs (called fields).
 };;
 ```
 
-### Type aliases 
+### Type aliases
 
 Any type can have additional name.
-
-
