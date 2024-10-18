@@ -1,17 +1,385 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-18T22:54:21+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2024/10/18/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2024-10-18T22:53:29+02:00</published><updated>2024-10-18T22:53:29+02:00</updated><id>http://localhost:4000/jekyll/update/2024/10/18/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2024/10/18/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-18T23:12:04+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Programming Languages with The Defiant</title><subtitle>This is a blog about programming languages and their features.  I will be writing about the languages I know and the ones I am learning.  I will also be writing about the features of the languages and how they can be used in different scenarios.</subtitle><entry><title type="html">Programming Languages</title><link href="http://localhost:4000/intro/2024/10/18/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Programming Languages" /><published>2024-10-18T22:53:29+02:00</published><updated>2024-10-18T22:53:29+02:00</updated><id>http://localhost:4000/intro/2024/10/18/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/intro/2024/10/18/welcome-to-jekyll.html"><![CDATA[<p>this repository is for language tests</p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<p>Currently I am learning:</p>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />OCaml</li>
+</ul>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p>Future languages:</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Rust</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Go</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Scala</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />C++</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Haskell</li>
+</ul>]]></content><author><name></name></author><category term="Intro" /><summary type="html"><![CDATA[this repository is for language tests]]></summary></entry><entry><title type="html">Notes from functional programming</title><link href="http://localhost:4000/2024/10/18/functional_programming.html" rel="alternate" type="text/html" title="Notes from functional programming" /><published>2024-10-18T00:00:00+02:00</published><updated>2024-10-18T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/18/functional_programming</id><content type="html" xml:base="http://localhost:4000/2024/10/18/functional_programming.html"><![CDATA[<p>**disclaimer - notes comes from <a href="https://www.cs.cornell.edu/~clarkson/">Michael Ryan Clarkson Open Course</a></p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p>The textbook is “OCaml Programming: Correct + Efficient + Beautiful”: https://cs3110.github.io/textbook</p>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
+<ul>
+  <li>defines computations as mathematical functions</li>
+  <li>avoids mutable state</li>
+</ul>
+
+<p>Expressions specify what to compute</p>
+
+<ul>
+  <li>Variables never change value</li>
+  <li>Functions never have side effects</li>
+</ul>
+
+<h2 id="imperative-program">Imperative program</h2>
+
+<ul>
+  <li>Change state
+Examples of commands that change the state:</li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">52</span>
+<span class="n">p</span><span class="p">.</span><span class="nb">next</span> <span class="o">=</span> <span class="n">p</span><span class="p">.</span><span class="nb">next</span><span class="p">.</span><span class="nb">next</span>
+</code></pre></div></div>
+
+<ul>
+  <li>Side effects</li>
+</ul>
+
+<div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">int</span> <span class="n">x</span><span class="o">=</span> <span class="mi">0</span>
+<span class="kt">int</span> <span class="nf">incr_x</span><span class="p">()</span> <span class="p">{</span>
+  <span class="n">x</span><span class="o">++</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[**disclaimer - notes comes from Michael Ryan Clarkson Open Course]]></summary></entry><entry><title type="html">OCaml main concepts</title><link href="http://localhost:4000/2024/10/18/ocaml_concepts.html" rel="alternate" type="text/html" title="OCaml main concepts" /><published>2024-10-18T00:00:00+02:00</published><updated>2024-10-18T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/18/ocaml_concepts</id><content type="html" xml:base="http://localhost:4000/2024/10/18/ocaml_concepts.html"><![CDATA[<h2 id="main-concepts">main concepts</h2>
+
+<h3 id="variables">Variables</h3>
+
+<p>OCaml is a function programming language. It uses following syntax.</p>
+
+<pre><code class="language-{OCaml}">let x = 50;;
+</code></pre>
+
+<p>Variables are immutable (they are constant). To use mutable variables one need to use <code class="language-plaintext highlighter-rouge">references</code>.
+Variables can be limited to some expression scope only</p>
+
+<pre><code class="language-{OCaml}">let y = 50 in y * y;;
+</code></pre>
+
+<p>The code above returns <code class="language-plaintext highlighter-rouge">2500</code> without assigning the result to the variable <code class="language-plaintext highlighter-rouge">y</code>.
+Variable <code class="language-plaintext highlighter-rouge">y</code> is only present in the scope followed by <code class="language-plaintext highlighter-rouge">in</code> expression.</p>
+
+<p>If one want to assign the result of <code class="language-plaintext highlighter-rouge">in</code> expression, then they can do following:</p>
+
+<pre><code class="language-{OCaml}">let s = let y = 50 in let z = 10 in y * z;;
+</code></pre>
+
+<p>Variable <code class="language-plaintext highlighter-rouge">s</code> is initialized with value of <code class="language-plaintext highlighter-rouge">500</code>. <code class="language-plaintext highlighter-rouge">y</code> and <code class="language-plaintext highlighter-rouge">z</code> are only bound to the expression scope.</p>
+
+<h3 id="lists">Lists</h3>
+
+<p>lists are created with following syntax:</p>
+
+<pre><code class="language-{OCaml}">let empty_list = [];;
+let int_list = [1;2;3];;
+</code></pre>
+
+<p>Important note is that list elements are split by <code class="language-plaintext highlighter-rouge">semicolon</code>, not comma.</p>
+
+<p>To prepend to the list use <code class="language-plaintext highlighter-rouge">cons</code> operator. It is not symmetric, so appending does not work.</p>
+
+<pre><code class="language-{OCaml}">let int_list = [1;2;3];;
+9 :: int_list;;
+</code></pre>
+
+<h3 id="references">references</h3>
+
+<p>To create reference use <code class="language-plaintext highlighter-rouge">ref</code> keyword.</p>
+
+<pre><code class="language-{OCaml}"># let r = ref 0;;
+val r : int ref = {contents = 0}
+</code></pre>
+
+<p>Accessing the reference needs to be done with <code class="language-plaintext highlighter-rouge">!</code> dereference operator.</p>
+
+<pre><code class="language-{OCaml}"># !r;;
+- : int = 0
+</code></pre>
+
+<p>To update the reference content use <code class="language-plaintext highlighter-rouge">:=</code></p>
+
+<pre><code class="language-{OCaml}"># r:= 10;;
+- : int = 10
+</code></pre>
+
+<p>One can chain couple of expressions with a single <code class="language-plaintext highlighter-rouge">;</code> between them.</p>
+
+<h3 id="functions">functions</h3>
+
+<p>Functions are defined as follow:</p>
+
+<pre><code class="language-{OCaml}">let square x = x * x;;
+square 10 ;;
+square(20);;
+</code></pre>
+
+<p>Anonymous functions</p>
+
+<pre><code class="language-{OCaml}">fun x -&gt; x * x;;
+let s = (fun x -&gt; x * x) 50;;
+</code></pre>
+
+<p>Partial execution of a function</p>
+
+<pre><code class="language-{OCaml}">let cat x y -&gt; x ^ " " ^ y;;
+let partial = cat "Hello";;
+let hello_world = partial "World";;
+</code></pre>
+
+<p>If one do not pass all arguments to the function. It becomes partial, and expects other arguments to 
+fill the blank ones before it is executed.</p>
+
+<p>Side effects are performed by set of functions like:</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />read_line</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />print_endline</li>
+</ul>
+
+<p>the first one takes IO (unit type), the latter returns to IO (unit type)</p>
+
+<p>Recursive functions should be used instead of <code class="language-plaintext highlighter-rouge">for</code> and <code class="language-plaintext highlighter-rouge">while</code> loops.</p>
+
+<pre><code class="language-{OCaml}">let rec range lo hi = 
+  if lo &gt; hi then
+    []
+  else 
+    lo :: range (lo + 1) hi;;
+</code></pre>
+
+<p>With recursive function they have to start with <code class="language-plaintext highlighter-rouge">let rec _ = _</code></p>
+
+<h2 id="pattern-matching">Pattern matching</h2>
+
+<p>We can match anything except functions.</p>
+
+<pre><code class="language-{OCaml}">let g' x = match x with
+    | "foo" -&gt; 1
+    | "bar" -&gt; 2
+    | "baz" -&gt; 3
+    | "qux" -&gt; 4
+    | _ -&gt; 0;;
+val g' : string -&gt; int = &lt;fun&gt;
+</code></pre>
+
+<h2 id="tuples">Tuples</h2>
+
+<p>Tuples can have mixed types.</p>
+
+<pre><code class="language-{OCaml}">let tpl = (1,2,"aaa");;
+</code></pre>
+
+<p>To access tuple element use pattern matching.</p>
+
+<pre><code class="language-{OCaml}">let second_elem t = match t with
+  | (_, y, _) -&gt; y;;
+</code></pre>
+
+<h2 id="types">types</h2>
+
+<h3 id="variant-types">Variant types</h3>
+
+<p>One can use enum like types.</p>
+
+<pre><code class="language-{OCaml}"># type page_range =
+    | All
+    | Current
+    | Range of int * int;;
+type page_range = All | Current | Range of int * int
+
+</code></pre>
+
+<h3 id="record-types">Record types</h3>
+
+<p>The record types are a bit like hash maps, one can access value by dot.</p>
+
+<pre><code class="language-{OCaml}"># type person = {
+    first_name : string;
+    surname : string;
+    age : int
+  };;
+type person = { first_name : string; surname : string; age : int; }
+</code></pre>
+
+<h2 id="exception">Exception</h2>
+
+<p>To raise an exception one should use <code class="language-plaintext highlighter-rouge">raise</code>. They are caught by <code class="language-plaintext highlighter-rouge">try with</code> expression.</p>
+
+<pre><code class="language-{OCaml}"># let id_42 n = if n &lt;&gt; 42 then raise (Failure "Sorry") else n;;
+val id_42 : int -&gt; int = &lt;fun&gt;
+
+# id_42 42;;
+- : int = 42
+
+# id_42 0;;
+Exception: Failure "Sorry".
+
+# try id_42 0 with Failure _ -&gt; 0;;
+- : int = 0
+</code></pre>
+
+<h2 id="modules">Modules</h2>
+
+<p>One can see what is in the module with <code class="language-plaintext highlighter-rouge">#show {Module}</code></p>
+
+<p>To call module function one need to access it by it’s module name:</p>
+
+<pre><code class="language-{OCaml}">Option.map (fun x -&gt; x * x) None;;
+Option.map (fun x -&gt; x * x) (Some 8);;
+</code></pre>]]></content><author><name></name></author><summary type="html"><![CDATA[main concepts]]></summary></entry><entry><title type="html">Data Types in OCaml</title><link href="http://localhost:4000/2024/10/18/data_types.html" rel="alternate" type="text/html" title="Data Types in OCaml" /><published>2024-10-18T00:00:00+02:00</published><updated>2024-10-18T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/18/data_types</id><content type="html" xml:base="http://localhost:4000/2024/10/18/data_types.html"><![CDATA[<p>OCaml is statically and strongly typed language. Types can not change
+at runtime, only when explicitly converted.</p>
+
+<p>We have following types:</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Int (Int32 &amp; Int64)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Float</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Bool</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Char (single quoted literals)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />String (allows for access, immutable)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Byte Sequence</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Array of ‘a type (non-extendable mutable arrays)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Lists of ‘a type (extendable, non-mutable linked-lists)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Options (Some, None)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Tuples (pairs)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Functions (m -&gt; n)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />Unit (side effects)</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />User defined types</li>
+</ul>
+
+<h2 id="user-defined-types">User defined types</h2>
+
+<p>These follow the ` type … = … ` structure, where first elipsis <code class="language-plaintext highlighter-rouge">...</code> is a type name (lowercase) and second is type
+definition. The definitions can be:</p>
+
+<h3 id="variants-tagged-unions">Variants (tagged unions)</h3>
+
+<p>Enumerated types, defined by explicit list of values. Defined values are called constructors and must be capitalised.</p>
+
+<pre><code class="language-{OCaml}"># type rectitude = Evil | R_Neutral | Good;;
+type rectitude = Evil | R_Neutral | Good
+</code></pre>
+
+<p>The variants can be recursive.</p>
+
+<h3 id="polymorphic-types">Polymorphic types</h3>
+
+<p>#TODO: Add the docs here … when you understand it !</p>
+
+<h3 id="records">Records</h3>
+
+<p>Like dictionaries with key-value pairs (called fields).</p>
+
+<pre><code class="language-{OCaml}"> type character = {
+  name : string;
+  level : int;
+  race : string;
+  class_type : character_class;
+  alignment : firmness * rectitude;
+  armor_class : int;
+};;
+</code></pre>
+
+<h3 id="type-aliases">Type aliases</h3>
+
+<p>Any type can have additional name.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[OCaml is statically and strongly typed language. Types can not change at runtime, only when explicitly converted.]]></summary></entry><entry><title type="html">Values and functions in OCaml</title><link href="http://localhost:4000/2024/10/18/values-and-functions-in-ocaml.html" rel="alternate" type="text/html" title="Values and functions in OCaml" /><published>2024-10-18T00:00:00+02:00</published><updated>2024-10-18T00:00:00+02:00</updated><id>http://localhost:4000/2024/10/18/values-and-functions-in-ocaml</id><content type="html" xml:base="http://localhost:4000/2024/10/18/values-and-functions-in-ocaml.html"><![CDATA[<p>Everything is an expression that yields a value. OCaml type system has a property of <code class="language-plaintext highlighter-rouge">subject reduction</code>.
+This property tells us that the type will not change at runtime (for instance no implicit type conversions).</p>
+
+<p>Each expression can be named, and evaluated or not, depending on the expression value.</p>
+
+<p>For instance:</p>
+
+<pre><code class="language-{OCaml}">utop # let value = "something";;
+val value : string = "something"
+utop # let value2 x  = x * x;;
+val value2 : int -&gt; int = &lt;fun&gt;
+
+</code></pre>
+
+<h2 id="local-and-top-level-expressions">Local and top level expressions</h2>
+
+<p>One can have global (top level) or local (using <code class="language-plaintext highlighter-rouge">in</code> keyword) named expressions. Local definitions can be</p>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />chained</li>
+</ul>
+
+<pre><code class="language-{OCaml}"># let d = 2 * 3 in
+  let e = d * 7 in
+  d * e;;
+- : int = 252
+
+# d;;
+Error: Unbound value d
+# e;;
+Error: Unbound value e
+</code></pre>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />nested</li>
+</ul>
+
+<pre><code class="language-{OCaml}"># let d =
+    let e = 2 * 3 in
+    e * 5 in
+  d * 7;;
+- : int = 210
+
+# d;;
+Error: Unbound value d
+# e;;
+Error: Unbound value e
+</code></pre>
+
+<h2 id="pattern-matching-and-destructuring">Pattern matching and destructuring</h2>
+
+<p>One can create a descructuring assingnment with <code class="language-plaintext highlighter-rouge">tuples</code> and <code class="language-plaintext highlighter-rouge">records</code>.</p>
+
+<h2 id="functions">functions</h2>
+
+<p>In OCaml one do not call functions with parenthesis, rather by it’s name and pass all positional arguments afterwards.
+The parenthesis are used to limit the expressions to subexpressions only.</p>
+
+<p>Reverse pipe operator in OCaml is called <code class="language-plaintext highlighter-rouge">application operator</code> and it’s value is <code class="language-plaintext highlighter-rouge">@@</code>.</p>
+
+<p>Original pipe operator is <code class="language-plaintext highlighter-rouge">|&gt;</code>.</p>
+
+<pre><code class="language-{OCaml}"># int_of_float (sqrt (float_of_int (int_of_string "81")));;
+- : int = 9
+
+# int_of_float @@ sqrt @@ float_of_int @@ int_of_string "81";;
+- : int = 9
+
+# "81" |&gt; int_of_string |&gt; float_of_int |&gt; sqrt |&gt; int_of_float;;
+- : int = 9
+</code></pre>
+
+<p>All recursive functions must be bound to a name.</p>
+
+<p>If we use <code class="language-plaintext highlighter-rouge">fun</code> keyword, we must use the <code class="language-plaintext highlighter-rouge">-&gt;</code> symbol. 
+We can use closures.</p>
+
+<p>The functions always have a single parameter (if multiple parameters are applied, then we use partials).
+We can also use tuple parameters in single parameter functions.</p>
+
+<ol>
+  <li>Function that uses multiple arguments is known as curried <code class="language-plaintext highlighter-rouge">string -&gt; (string -&gt; string)</code></li>
+  <li>Function that uses tuple as argument is known as uncurried <code class="language-plaintext highlighter-rouge">string * string -&gt; string</code></li>
+</ol>
+
+<p>Conversion <code class="language-plaintext highlighter-rouge">1 -&gt; 2</code> is called <code class="language-plaintext highlighter-rouge">uncurrying</code>, the other way around is <code class="language-plaintext highlighter-rouge">currying</code>.</p>
+
+<p>Another important concepts are <code class="language-plaintext highlighter-rouge">domain</code> and <code class="language-plaintext highlighter-rouge">codomain</code>.
+<code class="language-plaintext highlighter-rouge">domain (inputs) -&gt; codomain (results)</code>. If the function operates outside their domain or codomain.
+this means that is performs some <code class="language-plaintext highlighter-rouge">side effects</code>. <code class="language-plaintext highlighter-rouge">Pure</code> functions do not have side effects. <code class="language-plaintext highlighter-rouge">Impure</code> functions
+do.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Everything is an expression that yields a value. OCaml type system has a property of subject reduction. This property tells us that the type will not change at runtime (for instance no implicit type conversions).]]></summary></entry></feed>
