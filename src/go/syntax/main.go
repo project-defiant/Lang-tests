@@ -68,6 +68,10 @@ func main() {
 
 	printShape(rectangle)
 
+	// error handling
+
+	// panic("Panic!")
+
 }
 
 type Shape interface {
