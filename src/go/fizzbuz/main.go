@@ -21,8 +21,8 @@ func main() {
 
 	fmt.Printf("You have provided number: %v\n", *input)
 	for i := range *input {
-		msg := fizzBuzz(i, &mapping)
-		fmt.Printf("Number %v: %v\n", i, msg)
+		msg := fizzBuzz(i+1, &mapping)
+		fmt.Printf("Number %v: %v\n", i+1, msg)
 	}
 }
 
