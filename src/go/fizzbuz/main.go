@@ -17,6 +17,7 @@ func main() {
 	var mapping = map[int]string{
 		3: "Fizz",
 		5: "Buzz",
+		6: "Bug",
 	}
 
 	fmt.Printf("You have provided number: %v\n", *input)
